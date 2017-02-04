@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="next-success" template="/layoutmanager.jsp">
+		<put-attribute name="title" value="Student Page" />
+		<put-attribute name="body" value="/Student.jsp" />
+	</definition>
+
+	<definition name="next-error" template="/layoutmanager.jsp">
+		<put-attribute name="title" value="No student" />
+		<put-attribute name="body" value="/noStudent.jsp" />
+	</definition>
+	
+	<definition name="store-winner" template="/layoutmanager.jsp">
+		<put-attribute name="title" value="WinnerAck" />
+		<put-attribute name="body" value="/winner.jsp" />
+	</definition>
+
+	<definition name="store-loser" template="/layoutmanager.jsp">
+		<put-attribute name="title" value="SimpleAck" />
+		<put-attribute name="body" value="/loser.jsp" />
+	</definition>
+
+</tiles-definitions>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<script src="jquery-3.1.1.min.js"></script>
+		<link rel="stylesheet" href="./jquery-ui.css" />
+  		<script src="jquery.js"></script>
+  		<script src="jquery-ui.js"></script>
+		<title>swe 642</title>
+		<style>
+			body {
+				background-color: #96BBCB;
+			}
+			h1 {
+				color: #000080;
+				text-shadow: 2px 2px 4px #000000;
+			}
+			.intro { 
+				background-color: red;
+				color: blue;
+			}
+
+
+			#img {
+			  position: fixed;
+			  bottom: 0;
+			  right: 0;
+			}
+		</style>
+
+	</head>
+	<body>
+		<a href="index.html"><img src="GMUblack.png" alt="logo"/></a>
+		<font face="verdana">
+			<table>
+			<br/>
+			<br/>
+			<thead><h1>CS Deptartment Survey</h1></thead>
+			<form autocomplete="on">
+			<h4>	
+				 <tr>
+					<td>First name: </td>
+					<td><input type="text" required name="firstname" autofocus/> </td>
+				</tr>
+				<tr>
+					<td>Last name: </td>
+					<td><input type="text" required name="lastname"/> </td>
+				</tr>
+				<tr>
+					<td>Street address:</td>
+					<td><input type="text" required name="street"/></td>
+				</tr>
+				<tr>
+					<td>City:</td>
+					<td><input type="text" required name="city"/></td>
+				</tr>
+				<tr>
+					<td>State:</td>
+					<td><input type="text" required name="state"/></td>
+				</tr>
+				<tr>
+					<td>Zip</td>
+					<td><input type="number" required name="zip"/></td>
+				</tr>
+				<tr>
+					<td>Telephone Number:</td>
+					<td><input type="tel" required name="telephone"/></td>
+				</tr>
+				<tr>
+					<td>Email: </td>
+					<td><input type="email" required placeholder="john.doe@gmail.com" name="mail"/></td>
+				</tr>
+				<tr>
+					<td>URL: </td>
+					<td><input type="url" placeholder="https://www.google.com/" name="url"/></td>
+				 </tr>
+				<tr>
+					<td>Date of survey: </td>
+					<td><input type="date" name="surveydate"/></td>
+				<br/>
+				</tr>
+				<tr>
+					<td>High School Graduation Date:</td>
+					<td>
+						<input list="graduation">
+						<input type="number" name="year"/>
+					</td>
+				</tr>
+				<tr>
+					<td> What did you like most about the campus: </td>
+					<td>
+						<input type="checkbox" name="university" value="students"/>Students<br/>
+						<input type="checkbox" name="university" value="location"/>Location<br/>
+						<input type="checkbox" name="university" value="campus"/>Campus<br/>
+						<input type="checkbox" name="university" value="atmosphere"/>Atmosphere<br/>
+						<input type="checkbox" name="university" value="dorm"/>Dorm rooms <br/>
+						<input type="checkbox" name="university" value="sports"/>sports<br/>
+					</td>
+				</tr>
+				<tr>
+					<td> What gave rise to your interst in this university: </td>
+					<td>
+						<input type="radio" name= "interest" value="friends"/>Friends<br/>
+						<input type="radio" name= "interest" value="television"/>Television<br/>
+						<input type="radio" name= "interest" value="internet"/>Internet<br/>
+						<input type="radio" name= "interest" value="other"/>other<br/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Recommending GMU to others:
+					</td>
+					<td>
+						<input list="reco">
+						<datalist id="reco">
+							<option value="Very Likely">
+							<option value="Likely">
+							<option value="Unlikely">
+						</datalist>
+					</td>
+				</tr>
+				<tr>
+					<td>Additional Comments:</td>
+					<td>
+						<textarea rows="4" cols="50"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Submit"></td>
+				</tr>
+				<datalist id="graduation">
+					<option value="January">
+					<option value="February">
+					<option value="March">
+					<option value="April">
+					<option value="May">
+					<option value="June">
+					<option value="July">
+					<option value="August">
+					<option value="September">
+					<option value="October">
+					<option value="November">
+					<option value="December">
+				</datalist>
+				
+				</h4>
+			</table>
+			</form>
+			<br/>
+			<br/>
+			
+		</font>
+		<table border="3" cellpadding="3">
+			<tr style="align-content: center; padding: all;">
+				<td>Major</td>
+				<td>Computer Science</td>
+			</tr>
+			<tr style="align-content: center; padding: all;">
+				<td>G Number</td>
+				<td>G00963429</td>
+			</tr>
+			<tr style="align-content: center; padding: all;">
+				<td>Email</td>
+				<td>schadda@gmu.edu</td>
+			</tr>
+		</table>
+		
+
+		<div id="img" >
+			<a href="https://www2.gmu.edu/">
+				<img id="bottomlogo" title="Please visit http://www.gmu.edu for more information" src="./GMURGB.bmp"/>
+			</a>
+		</div>
+		
+	</body>
+</html>
